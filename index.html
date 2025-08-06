@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html lang="tr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Computer Engineer | Full Stack Developer</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
         * {
             margin: 0;
@@ -63,15 +66,55 @@
             animation: float 20s infinite ease-in-out;
         }
 
-        .shape:nth-child(1) { width: 80px; height: 80px; top: 20%; left: 10%; animation-delay: 0s; }
-        .shape:nth-child(2) { width: 120px; height: 120px; top: 60%; right: 10%; animation-delay: -5s; }
-        .shape:nth-child(3) { width: 60px; height: 60px; bottom: 20%; left: 20%; animation-delay: -10s; }
-        .shape:nth-child(4) { width: 100px; height: 100px; top: 30%; right: 30%; animation-delay: -15s; }
+        .shape:nth-child(1) {
+            width: 80px;
+            height: 80px;
+            top: 20%;
+            left: 10%;
+            animation-delay: 0s;
+        }
+
+        .shape:nth-child(2) {
+            width: 120px;
+            height: 120px;
+            top: 60%;
+            right: 10%;
+            animation-delay: -5s;
+        }
+
+        .shape:nth-child(3) {
+            width: 60px;
+            height: 60px;
+            bottom: 20%;
+            left: 20%;
+            animation-delay: -10s;
+        }
+
+        .shape:nth-child(4) {
+            width: 100px;
+            height: 100px;
+            top: 30%;
+            right: 30%;
+            animation-delay: -15s;
+        }
 
         @keyframes float {
-            0%, 100% { transform: translateY(0px) rotate(0deg); opacity: 0.5; }
-            33% { transform: translateY(-30px) rotate(120deg); opacity: 0.8; }
-            66% { transform: translateY(20px) rotate(240deg); opacity: 0.6; }
+
+            0%,
+            100% {
+                transform: translateY(0px) rotate(0deg);
+                opacity: 0.5;
+            }
+
+            33% {
+                transform: translateY(-30px) rotate(120deg);
+                opacity: 0.8;
+            }
+
+            66% {
+                transform: translateY(20px) rotate(240deg);
+                opacity: 0.6;
+            }
         }
 
         /* Navigation */
@@ -154,6 +197,7 @@
             display: flex;
             justify-content: center;
             margin-bottom: 2rem;
+            margin-top: 4rem;
         }
 
         .profile-image {
@@ -166,6 +210,12 @@
             box-shadow: 0 10px 30px rgba(255, 0, 110, 0.3);
             transition: all 0.3s ease;
             position: relative;
+            background: var(--gradient-main);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 4rem;
+            color: white;
         }
 
         .profile-image:hover {
@@ -215,6 +265,9 @@
             font-size: 1.5rem;
             color: var(--text-secondary);
             margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
         }
 
         .hero-description {
@@ -318,9 +371,17 @@
             border-radius: 50%;
         }
 
-        .btn-close { background: #ff5f57; }
-        .btn-minimize { background: #ffbd2e; }
-        .btn-maximize { background: #28ca42; }
+        .btn-close {
+            background: #ff5f57;
+        }
+
+        .btn-minimize {
+            background: #ffbd2e;
+        }
+
+        .btn-maximize {
+            background: #28ca42;
+        }
 
         .code-content {
             font-family: 'Monaco', 'Consolas', monospace;
@@ -343,14 +404,32 @@
             color: var(--text-primary);
         }
 
-        .keyword { color: #ff79c6; }
-        .string { color: #f1fa8c; }
-        .comment { color: #6272a4; }
-        .function { color: #50fa7b; }
+        .keyword {
+            color: #ff79c6;
+        }
+
+        .string {
+            color: #f1fa8c;
+        }
+
+        .comment {
+            color: #6272a4;
+        }
+
+        .function {
+            color: #50fa7b;
+        }
 
         @keyframes pulse {
-            0%, 100% { transform: scale(1); }
-            50% { transform: scale(1.02); }
+
+            0%,
+            100% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.02);
+            }
         }
 
         /* Sections */
@@ -571,8 +650,9 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 3rem;
+            font-size: 2rem;
             margin: 0 auto 2rem;
+            color: white;
         }
 
         .education-title {
@@ -614,11 +694,6 @@
             opacity: 0.9;
         }
 
-        .contact-icon {
-            font-size: 1.2rem;
-            margin-right: 0.5rem;
-        }
-
         .contact-links {
             display: flex;
             justify-content: center;
@@ -635,6 +710,9 @@
             transition: all 0.3s ease;
             backdrop-filter: blur(10px);
             border: 1px solid rgba(255, 255, 255, 0.2);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
         }
 
         .contact-link:hover {
@@ -657,6 +735,7 @@
                 transform: translateX(-100px);
                 opacity: 0;
             }
+
             to {
                 transform: translateX(0);
                 opacity: 1;
@@ -668,6 +747,7 @@
                 transform: translateX(100px);
                 opacity: 0;
             }
+
             to {
                 transform: translateX(0);
                 opacity: 1;
@@ -763,6 +843,7 @@
         }
     </style>
 </head>
+
 <body>
     <!-- Animated Background -->
     <div class="bg-animation">
@@ -777,9 +858,9 @@
     <!-- Navigation -->
     <nav>
         <div class="nav-container">
-            <a href="#" class="logo">DEV</a>
+            <a href="#" class="logo"><i class="fas fa-code"></i> DEV</a>
             <button class="mobile-toggle" onclick="toggleMenu()">
-                ☰
+                <i class="fas fa-bars"></i>
             </button>
             <ul class="nav-menu" id="navMenu">
                 <li><a href="#about">Hakkımda</a></li>
@@ -796,13 +877,20 @@
             <div class="hero-content">
                 <div class="hero-text">
                     <div class="profile-photo">
-                        <img src="profile.jpg" alt="Profile Photo" class="profile-image">
+                        <div class="profile-image">
+                            <i class="fas fa-user"></i>
+                        </div>
                     </div>
                     <h1 class="hero-title">Computer Engineer</h1>
-                    <p class="hero-subtitle">💻 Aspiring Full Stack Developer</p>
+                    <p class="hero-subtitle">
+                        <i class="fas fa-laptop-code"></i>
+                        Aspiring Full Stack Developer
+                    </p>
                     <p class="hero-description">
-                        Flutter & ASP.NET odaklı gelişen bir yazılım geliştirici. Backend geliştirme becerilerimi artırarak 
-                        full-stack developer olmaya odaklanıyorum. Uzmanlığımı kullanabileceğim ve geliştirebileceğim roller arıyorum.
+                        Flutter & ASP.NET odaklı gelişen bir yazılım geliştirici. Backend geliştirme becerilerimi
+                        artırarak
+                        full-stack developer olmaya odaklanıyorum. Uzmanlığımı kullanabileceğim ve geliştirebileceğim
+                        roller arıyorum.
                     </p>
                     <div class="tech-stack">
                         <span class="tech-item">Flutter</span>
@@ -816,10 +904,12 @@
                     </div>
                     <div class="cta-buttons">
                         <a href="#contact" class="btn btn-primary">
-                            ✉️ İletişime Geç
+                            <i class="fas fa-envelope"></i>
+                            İletişime Geç
                         </a>
                         <a href="#experience" class="btn btn-secondary">
-                            💼 Deneyimlerim
+                            <i class="fas fa-briefcase"></i>
+                            Deneyimlerim
                         </a>
                     </div>
                 </div>
@@ -833,31 +923,35 @@
                         <div class="code-content">
                             <div class="code-line">
                                 <span class="line-number">1</span>
-                                <span class="code-text"><span class="keyword">class</span> <span class="function">Developer</span> {</span>
+                                <span class="code-text"><span class="keyword">class</span> <span
+                                        class="function">Developer</span> {</span>
                             </div>
                             <div class="code-line">
                                 <span class="line-number">2</span>
-                                <span class="code-text">  <span class="keyword">String</span> name = <span class="string">"Computer Engineer"</span>;</span>
+                                <span class="code-text"> <span class="keyword">String</span> name = <span
+                                        class="string">"Computer Engineer"</span>;</span>
                             </div>
                             <div class="code-line">
                                 <span class="line-number">3</span>
-                                <span class="code-text">  <span class="keyword">List</span> skills = [</span>
+                                <span class="code-text"> <span class="keyword">List</span> skills = [</span>
                             </div>
                             <div class="code-line">
                                 <span class="line-number">4</span>
-                                <span class="code-text">    <span class="string">"Flutter"</span>, <span class="string">"ASP.NET"</span>,</span>
+                                <span class="code-text"> <span class="string">"Flutter"</span>, <span
+                                        class="string">"ASP.NET"</span>,</span>
                             </div>
                             <div class="code-line">
                                 <span class="line-number">5</span>
-                                <span class="code-text">    <span class="string">"Spring"</span>, <span class="string">"Firebase"</span></span>
+                                <span class="code-text"> <span class="string">"Spring"</span>, <span
+                                        class="string">"Firebase"</span></span>
                             </div>
                             <div class="code-line">
                                 <span class="line-number">6</span>
-                                <span class="code-text">  ];</span>
+                                <span class="code-text"> ];</span>
                             </div>
                             <div class="code-line">
                                 <span class="line-number">7</span>
-                                <span class="code-text">  <span class="comment">// Always learning 🚀</span></span>
+                                <span class="code-text"> <span class="comment">// Always learning 🚀</span></span>
                             </div>
                             <div class="code-line">
                                 <span class="line-number">8</span>
@@ -877,17 +971,19 @@
             <div class="about-content">
                 <div class="about-text fade-in">
                     <p>
-                        Akademik yolculuğum boyunca Flutter, ASP.NET, Spring, Firebase, CSS, HTML, C ve C++ 
-                        teknolojilerinde kendimi geliştirdim. Şu anda backend geliştirme becerilerimi artırıyor, 
+                        Akademik yolculuğum boyunca Flutter, ASP.NET, Spring, Firebase, CSS, HTML, C ve C++
+                        teknolojilerinde kendimi geliştirdim. Şu anda backend geliştirme becerilerimi artırıyor,
                         full-stack developer olmak için ASP.NET, Spring ve Flutter odaklı çalışıyorum.
                     </p>
                     <p>
-                        Çukurova Üniversitesi Bilgisayar Mühendisliği mezunu olarak, teorik bilgiyi pratik projelerle 
-                        birleştirme konusunda deneyim kazandım. TEMSA ve Proaktif Bilişim gibi firmalarda stajlar yaparak 
+                        Çukurova Üniversitesi Bilgisayar Mühendisliği mezunu olarak, teorik bilgiyi pratik projelerle
+                        birleştirme konusunda deneyim kazandım. TEMSA ve Proaktif Bilişim gibi firmalarda stajlar
+                        yaparak
                         gerçek projelerde çalışma fırsatı buldum.
                     </p>
                     <p>
-                        Uzmanlığımı kullanabileceğim ve daha da geliştirebileceğim roller arıyorum. Teknoloji dünyasındaki 
+                        Uzmanlığımı kullanabileceğim ve daha da geliştirebileceğim roller arıyorum. Teknoloji
+                        dünyasındaki
                         gelişmeleri yakından takip ediyor ve sürekli öğrenme odaklı bir yaklaşım benimsiyor.
                     </p>
                 </div>
@@ -939,9 +1035,9 @@
                         <div class="timeline-title">Intern</div>
                         <div class="timeline-company">TEMSA · Stajyer</div>
                         <div class="timeline-description">
-                            IT departmanında çalışarak, önceden geliştirilmiş backend sistemleri ve Figma tasarımlarını 
-                            Flutter, Postman ve Swagger kullanarak fonksiyonel uygulamalara dönüştürdüm. Projelerin 
-                            işlevselliğini geliştirerek üst departmanlara sunulmasını sağladım. Bu süreçte gerçek API 
+                            IT departmanında çalışarak, önceden geliştirilmiş backend sistemleri ve Figma tasarımlarını
+                            Flutter, Postman ve Swagger kullanarak fonksiyonel uygulamalara dönüştürdüm. Projelerin
+                            işlevselliğini geliştirerek üst departmanlara sunulmasını sağladım. Bu süreçte gerçek API
                             entegrasyonu ve Flutter konularında deneyim kazandım.
                         </div>
                         <div class="timeline-skills">
@@ -961,9 +1057,9 @@
                         <div class="timeline-title">Remote Work</div>
                         <div class="timeline-company">ESC Mühendislik · Serbest çalışan</div>
                         <div class="timeline-description">
-                            ESC Mühendislik şirketinde altı ay boyunca uzaktan çalışarak Stockholm şehir planının 
-                            dijital transferine katkıda bulundum. Bu yazılım geliştirme projesi olmasa da, deneyim 
-                            takım çalışması becerilerimi önemli ölçüde geliştirdi ve mühendislik şirket operasyonları 
+                            ESC Mühendislik şirketinde altı ay boyunca uzaktan çalışarak Stockholm şehir planının
+                            dijital transferine katkıda bulundum. Bu yazılım geliştirme projesi olmasa da, deneyim
+                            takım çalışması becerilerimi önemli ölçüde geliştirdi ve mühendislik şirket operasyonları
                             hakkında derin bir anlayış sağladı.
                         </div>
                         <div class="timeline-skills">
@@ -983,7 +1079,7 @@
             <h2 class="section-title fade-in">Eğitim</h2>
             <div class="education-card fade-in">
                 <div class="education-icon">
-                    🎓
+                    <i class="fas fa-graduation-cap"></i>
                 </div>
                 <div class="education-title">Lisans, Bilgisayar Mühendisliği</div>
                 <div class="education-school">Çukurova Üniversitesi</div>
@@ -998,20 +1094,20 @@
             <h2 class="section-title">İletişim</h2>
             <div class="contact-content">
                 <p class="contact-description">
-                    Yeni fırsatlar için benimle iletişime geçmekten çekinmeyin. 
+                    Yeni fırsatlar için benimle iletişime geçmekten çekinmeyin.
                     Full-stack development konusunda işbirliği yapmaya hazırım!
                 </p>
                 <div class="contact-links">
                     <a href="mailto:tkucukasci@gmail.com" class="contact-link">
-                        <span class="contact-icon">✉️</span>
+                        <i class="fas fa-envelope"></i>
                         E-posta Gönder
                     </a>
-                    <a href="linkedin.com/in/tkucukasci" target="_blank" class="contact-link">
-                        <span class="contact-icon">💼</span>
+                    <a href="https://linkedin.com/in/tkucukasci" target="_blank" class="contact-link">
+                        <i class="fab fa-linkedin"></i>
                         LinkedIn
                     </a>
-                    <a href="github.com/Just0lga" target="_blank" class="contact-link">
-                        <span class="contact-icon">🐙</span>
+                    <a href="https://github.com/Just0lga" target="_blank" class="contact-link">
+                        <i class="fab fa-github"></i>
                         GitHub
                     </a>
                 </div>
@@ -1050,7 +1146,7 @@
         });
 
         // Navbar scroll effect
-        window.addEventListener('scroll', function() {
+        window.addEventListener('scroll', function () {
             const nav = document.querySelector('nav');
             if (window.scrollY > 100) {
                 nav.style.background = 'rgba(10, 14, 39, 0.95)';
@@ -1065,7 +1161,7 @@
             rootMargin: '0px 0px -50px 0px'
         };
 
-        const observer = new IntersectionObserver(function(entries) {
+        const observer = new IntersectionObserver(function (entries) {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
                     entry.target.classList.add('visible');
@@ -1094,25 +1190,26 @@
 
         // Add some interactive effects
         document.querySelectorAll('.tech-item').forEach(item => {
-            item.addEventListener('mouseenter', function() {
+            item.addEventListener('mouseenter', function () {
                 this.style.transform = 'translateY(-3px) scale(1.05)';
             });
-            item.addEventListener('mouseleave', function() {
+            item.addEventListener('mouseleave', function () {
                 this.style.transform = 'translateY(0) scale(1)';
             });
         });
 
         // Add floating animation to shapes
         document.querySelectorAll('.shape').forEach((shape, index) => {
-            shape.addEventListener('mouseenter', function() {
+            shape.addEventListener('mouseenter', function () {
                 this.style.animationPlayState = 'paused';
                 this.style.transform = 'scale(1.2)';
             });
-            shape.addEventListener('mouseleave', function() {
+            shape.addEventListener('mouseleave', function () {
                 this.style.animationPlayState = 'running';
                 this.style.transform = 'scale(1)';
             });
         });
     </script>
 </body>
+
 </html>
